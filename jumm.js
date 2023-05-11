@@ -91,7 +91,7 @@ function gameLoop() {
  }
  if (snakeX < 0|| snakeX >= gridSize || snakeY < 0|| snakeY >= gridSize) {
     clearInterval(interval);
-    alert("GAME OVER!!! thanks for playing");
+    alert("GAME OVER  !!!!!!!!!!!!!!!!!!  THANKS FOR PLAYING👾👾👾👾");
     return;
 }
 
@@ -110,17 +110,8 @@ function gameLoop() {
     ctx.fillStyle = "red";
      for (var i = 0; i < snakeLength; i++) {
         ctx.fillRect((snakeX - i) * cellSize, snakeY * cellSize, cellSize, cellSize);
-    }
+     }
 }
 
-const scoreElement = document.getElementById("score");
 
-let score = 0;
 
-function increaseScore() {
-  score++;
-  scoreElement.textContent = score;
-}
-
-// Example usage:
-increaseScore(1); // Increases the score by 1 and updates the scoreboard
